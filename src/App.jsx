@@ -3,6 +3,10 @@ import Navbar from './sections/NavBar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+import Experience from './sections/Experience'
+import Education from './sections/Education'
 
 function App() {
   return (
@@ -10,7 +14,11 @@ function App() {
       <Navbar/>
       <Hero/>  
       <About/>
+      <Education/>
+      <Experience/>
       <Projects/>
+      <Contact/>
+      <Footer/>
     </main>
   )
 }
