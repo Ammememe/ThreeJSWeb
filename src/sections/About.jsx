@@ -59,10 +59,14 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">I work from anywhere</p>
-              <p className="grid-subtext">I'm based in Sweden</p>
-              <Button name="Contact Me" isBeam={true} containerClass="w-full mt-10" />
-            </div>
+  <p className="grid-headtext">I work from anywhere</p>
+  
+  <p className="grid-subtext">I'm based in Sweden</p>
+  <a href="#contact">
+    <Button name="Contact Me" isBeam={true} containerClass="w-full mt-10" />
+  </a>
+</div>
+
           </div>
         </div>
         <div className="xl:col-span-2 xl:row-span-3">

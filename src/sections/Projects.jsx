@@ -69,8 +69,8 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" className="w-3 h-3" alt="arrow" />
+              
+             
             </a>
           </div>
           <div className="flex justify-between items-center mt-7">

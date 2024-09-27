@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -25,6 +24,20 @@ export default {
       },
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1.5s ease-in forwards',
+      },
+      animationDelay: {
+        1: '1s',
+        2: '2s',
+        3: '3s',
       },
     },
   },
