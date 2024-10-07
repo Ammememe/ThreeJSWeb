@@ -9,7 +9,7 @@ import HeroCamera from '../components/HeroCamera';
 import Button from '../components/Button';
 
 const Hero = () => {
-  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isSmall = useMediaQuery({ maxWidth: 440 }); 
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
@@ -31,6 +31,13 @@ const Hero = () => {
         </p>
       </div>
 
+      {/* Download Resume Button */}
+      <div className="absolute bottom-20 left-0 right-0 w-full z-10 c-space">
+        <a href="/public/assets/AmirResume.pdf" download>
+          <Button name="Download Resume" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+        </a>
+      </div>
+
       <div className="w-full h-full absolute inset-0">
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
@@ -40,12 +47,6 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
-      </div>
-
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#about" className="w-fit">
-          <Button name="Let's Work Together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-        </a>
       </div>
     </section>
   );

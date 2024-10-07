@@ -55,7 +55,7 @@ const Contact = () => {
 
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">Y'all motherfuckers need a cloud developer?</p>
+          <p className="text-lg text-white-600 mt-3">Are you looking for a Cloud Developer? Let me know!</p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">
@@ -91,7 +91,7 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Please hire me!"
+                placeholder="What's up?"
               />
             </label>
 

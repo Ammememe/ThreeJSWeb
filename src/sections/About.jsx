@@ -6,7 +6,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('Amir_khatiby@hotmail.com');
+    navigator.clipboard.writeText('amir_khatiby@hotmail.com');
     setHasCopied(true);
     
     setTimeout(() => {
@@ -59,9 +59,9 @@ const About = () => {
               />
             </div>
             <div>
-  <p className="grid-headtext">I work from anywhere</p>
+  <p className="grid-headtext">I can work from anywhere</p>
   
-  <p className="grid-subtext">I'm based in Sweden</p>
+  <p className="grid-subtext">I'm currently based in Eksjö, Sweden</p>
   <a href="#contact">
     <Button name="Contact Me" isBeam={true} containerClass="w-full mt-10" />
   </a>
@@ -91,7 +91,7 @@ const About = () => {
                   alt={hasCopied ? 'Copied' : 'Copy'}
                   className="cursor-pointer"
                 />
-                <p className='lg:text-2xl md:text-l font-medium text-gray_gradient text-white'>Amir_khatiby@hotmail.com</p>
+                <p className='lg:text-2xl md:text-l font-medium text-gray_gradient text-white'>amir_khatiby@hotmail.com</p>
               </div>
             </div>
           </div>
